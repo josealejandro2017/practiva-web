@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+
+
+<body>
+
+	<hr>
+	<p>
+		<center><big>	
+		 Cálculo IMC
+		</big></center>
+	</p>
+	<hr>
+
+
+	<script>
+
+	function saltarlinea() {
+
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+
+	}
+
+
+	function imprimir (frase){
+
+		document.write(frase);
+		saltarlinea();
+
+	}
+
+		// alert("jajajaja");
+
+		/** var i = hola mundo ;  solo se declara una sola vez y puedo modificarla para otros codigos **/
+
+		//imprimir("Estoy definiendo la edad de Cristian," );
+	function imc(peso,altura){
+		return (peso /(altura*altura));
+	}
+	
+	nombreInformado = prompt("nombre")
+	pesoInformado = prompt(nombreInformado + ", peso");
+	alturaInformado = prompt(nombreInformado + ", altura");
+
+	calculo = imc(pesoInformado, alturaInformado);
+	imprimir (nombreInformado + " "+ calculo);
+
+	if (calculo < 18.5){
+		imprimir("abajo de lo recomendado")
+	}
+
+	if (calculo >= 18.5 ){
+		if(calculo < 25){
+			imprimir("Normal");
+		}
+	}
+
+	if (calculo >= 25 ){
+		if(calculo < 30){
+			imprimir("Sobrepeso");
+		}
+	}
+
+	if (calculo >= 30){
+		imprimir("Obecidad")
+	}
+
+
+	saltarlinea()
+	saltarlinea()
+	saltarlinea()
+
+
+
+
+
+
+
+	</script>
+
+
+
+  
+
+
+	
+
+</body>
+</html>

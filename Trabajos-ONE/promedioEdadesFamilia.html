@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+
+
+<body>
+
+	<hr>
+	<p>
+		<center><big>	
+		 CALCULAR PROMEDIO DE EDADES FAMILIAR
+		</big></center>
+	</p>
+	<hr>
+
+	<center>
+	<script>
+
+	function saltarlinea() {
+
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+
+	}
+
+
+	function imprimir (frase){
+
+		document.write(frase);
+		saltarlinea();
+
+	}
+
+var numeroDeMiembros= parseInt(prompt("ingrese la cantidad de personas"));
+var contador = 1;
+var totalEdades = 0
+
+while(contador <= numeroDeMiembros){
+
+
+	
+	edad = parseInt(prompt("Ingrese la Edad del familiar"));
+	totalEdades = totalEdades + edad;
+	contador++;
+
+	
+}
+
+media = totalEdades/numeroDeMiembros;
+
+imprimir("La media es " + media);
+imprimir("Fin")
+
+
+
+
+
+
+
+
+
+//++ (para usarlo como incrementador)
+	
+
+
+
+
+	</script>
+	</center>
+
+  
+
+
+	
+
+</body>
+<footer>
+	<hr>
+	Todo los Derechos Reservados ♫♫♫♫♫
+	<hr>
+</footer>
+</html>
